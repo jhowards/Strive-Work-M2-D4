@@ -31,50 +31,51 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
     <div class="container">
       <h1 class="text-center mb-2 pt-2"><b>Strive Team Generator</b></h1>
       <hr style="background-color: black;"></hr>
-      <form>
+      
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col">
+            <form onsubmit="addParticipant(); return false">
         <div class="form-group">
-          <label for="exampleInputEmail1"><b>Add Participant Name</b></label>
+          <b>Add Participant Name</b>
           <input
-            type="email"
+            type="text"
             class="form-control mb-2"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+            id="addPlayer"
           />
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary" onclick="addParticipant();">Submit</button>
+        </form>
+        
       </div>
+    
       </div>
       <div class="col">
         <p class="text-center"><b>List Of Participants</b></p>
-        <ol>
-          <li>Test</li>
-          <li>Test</li>
-
-
+        <ol id="participantList">
         </ol>
       </div>
       </div>
-      </form>
+      
       
         <p class="mt-2"><b>Number of teams</b></p>
         <form>
           <div class="form-group">
             <label for="exampleFormControlSelect1">Example select</label>
             <select class="form-control" id="exampleFormControlSelect1" style="max-width:150px;">
-              <option>1</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               <option>5</option>
+              <option>6</option>
             </select>
           </div>
         </form>
 
         <button type="button" class="btn btn-success mt-3">Assign</button>
+        <button type="button" class="btn btn-success mt-3 ml-3">Auto Assign</button>
     
     </div>
   </body>
