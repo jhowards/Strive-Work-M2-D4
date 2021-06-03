@@ -2,6 +2,8 @@
 
 WELCOME TO THE STRIVE TEAM GENERATOR!
 
+Brief:
+
     In this app you will generate teams and assign the participants to them.
     You will use the Bootstrap components for the elements of your app.
 
