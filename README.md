@@ -1,10 +1,9 @@
 # Strive-Work-M2-D4
 
 WELCOME TO THE STRIVE TEAM GENERATOR!
-
-    In this app you will generate teams and assign the participants to them.
-    You will use the Bootstrap components for the elements of your app.
-
+Brief:
+In this app you will generate teams and assign the participants to them.
+You will use the Bootstrap components for the elements of your app.
 
     The features are the following:
     - The user should be able to add a list of names, find a way to get the user input and fill a list with the new name.
