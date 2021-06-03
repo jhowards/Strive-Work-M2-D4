@@ -7,7 +7,8 @@ function addParticipant() {
 
     let list = document.getElementById("participantList");
     let addItem = document.createElement("li");
-    addItem.innerText = x;
+    addItem.innerText = participants.length + ". " + x;
+    addItem.classList = "list-group-item";
     list.appendChild(addItem);
   }
 }

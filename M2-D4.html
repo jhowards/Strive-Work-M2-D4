@@ -40,27 +40,17 @@
           <div class="col">
             <form onsubmit="addParticipant(); return false">
         <div class="form-group">
-          <b>Add Participant Name</b>
+          <b>Add Participant First Name</b>
           <input
             type="text"
             class="form-control mb-2"
             id="addPlayer"
+            style="max-width:80%"
           />
           <button type="button" class="btn btn-primary" onclick="addParticipant();">Submit</button>
         </form>
-        
-      </div>
-    
-      </div>
-      <div class="col">
-        <p class="text-center"><b>List Of Participants</b></p>
-        <ol id="participantList">
-        </ol>
-      </div>
-      </div>
-      
-      
-        <p class="mt-2"><b>Number of teams</b></p>
+
+        <p class="mt-5"><b>Number of teams</b></p>
         <form>
           <div class="form-group">
             <label for="exampleFormControlSelect1">Example select</label>
@@ -76,7 +66,25 @@
 
         <button type="button" class="btn btn-success mt-3">Assign</button>
         <button type="button" class="btn btn-success mt-3 ml-3">Auto Assign</button>
+        
+      </div>
     
+      </div>
+      <div class="col">
+        <p class="text-center"><b>List Of Participants</b></p>
+        <div class="container">
+          <div class="row">
+            <div class="col-4 mr-4">
+        <ol class="list-group d-flex flex-column flex-wrap" id="participantList">
+        </ol>
+      </div>
+      </div>
+      </div>
     </div>
+      </div>
+      
+      
+    
+    
   </body>
 </html>

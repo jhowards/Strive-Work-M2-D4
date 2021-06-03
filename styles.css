@@ -11,3 +11,12 @@ body {
 li {
   display: block;
 }
+
+.list-group {
+  height: 300px;
+}
+
+.list-group-item {
+  height: 40px;
+  border: none;
+}
