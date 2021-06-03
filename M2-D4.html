@@ -37,7 +37,7 @@
       <hr style="background-color: black;"></hr>
       
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col mb-3">
             <form onsubmit="addParticipant(); return false">
         <div class="form-group">
           <b>Add Participant First Name</b>
@@ -46,26 +46,28 @@
             class="form-control mb-2"
             id="addPlayer"
             style="max-width:80%"
+            maxlength="13"
           />
           <button type="button" class="btn btn-primary" onclick="addParticipant();">Submit</button>
         </form>
 
-        <p class="mt-5"><b>Number of teams</b></p>
         <form>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1" style="max-width:150px;">
+          <div class="form-group" style="max-width:150px;">
+            <label for="playerAmount" class="mt-4"><b>Number of teams</b></label>
+            <select class="form-control" id="playerAmount" onchange="selectChange()" >
+              <option style="display:none;"></option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               <option>5</option>
               <option>6</option>
+              <option>7</option>
             </select>
           </div>
         </form>
 
-        <button type="button" class="btn btn-success mt-3">Assign</button>
-        <button type="button" class="btn btn-success mt-3 ml-3">Auto Assign</button>
+        <button type="button" class="btn btn-success mt-3" onclick="assignPlayer();">Assign</button>
+        <button type="button" class="btn btn-success mt-3 ml-3" onclick="autoAssignPlayer();">Auto Assign</button>
         
       </div>
     
@@ -74,7 +76,7 @@
         <p class="text-center"><b>List Of Participants</b></p>
         <div class="container">
           <div class="row">
-            <div class="col-4 mr-4">
+            <div class="cols-4 mr-4">
         <ol class="list-group d-flex flex-column flex-wrap" id="participantList">
         </ol>
       </div>
@@ -83,8 +85,19 @@
     </div>
       </div>
       
+      <h2 class="text-center"><b>Teams</b></h2>
+      <div class="container">
+        <div class="teamrow row row-cols-2 row-cols-md-3 row-cols-lg-7">
+         <div class="col teamcol"></div>
+         <div class="col teamcol"></div>
+         <div class="col teamcol"></div>
+         <div class="col teamcol"></div>
+         <div class="col teamcol"></div>
+         <div class="col teamcol"></div>
+         <div class="col teamcol"></div>
+        </div>
+      </div>
       
-    
     
   </body>
 </html>
